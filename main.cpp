@@ -7,9 +7,17 @@ void outputArrayData(double* array);
 double sumArray(double* array);
 int main()
 {
-    arr
+    double* arr = new double[5];
     enterArrayData(arr);
     outputArrayData(arr);
+
+    double s = sumArray(arr);
+    cout << "Sum of values: " << s << endl;
+
+    delete [] arr;
+    
+    return 0;
+
 
 }
 void enterArrayData(double* array)
@@ -20,6 +28,8 @@ void enterArrayData(double* array)
         cout << "> Element #" << i << ": " << endl;
         cin >> array[i];
     }
+    cout << endl;
+    cout << "Data entry complete." << endl;
 }
 void outputArrayDate(double* array)
 {
