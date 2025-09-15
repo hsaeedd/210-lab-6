@@ -15,7 +15,7 @@ int main()
     cout << "Sum of values: " << s << endl;
 
     delete [] arr;
-    
+
     return 0;
 
 
@@ -31,7 +31,7 @@ void enterArrayData(double* array)
     cout << endl;
     cout << "Data entry complete." << endl;
 }
-void outputArrayDate(double* array)
+void outputArrayData(double* array)
 {
     cout << "Outputting array elements: ";
     for(int i = 0; i < 5; i++)
