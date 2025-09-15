@@ -35,7 +35,7 @@ void outputArrayData(double* array)
     cout << "Outputting array elements: ";
     for(int i = 0; i < 5; i++)
     {
-        cout << array[i] << " ";
+        cout << *(array + i) << " ";
     }
     cout << endl;
 }
