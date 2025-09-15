@@ -26,7 +26,7 @@ void enterArrayData(double* array)
     for(int i = 0; i < 5; i++)
     {
         cout << "> Element #" << i << ": ";
-        cin >> array[i];
+        cin >> *(array + i);
     }
     cout << "Data entry complete." << endl;
 }
@@ -44,7 +44,7 @@ double sumArray(double* array)
     double sum = 0;
     for(int i= 0; i <5; i++)
     {
-        sum = sum + array[i];
+        sum = sum + *(array + i);
     }
     return sum;
 
