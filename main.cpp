@@ -15,7 +15,7 @@ int main()
     cout << "Sum of values: " << s << endl;
 
     delete [] arr;
-
+    
     return 0;
 
 
@@ -25,10 +25,9 @@ void enterArrayData(double* array)
     cout << "Data entry for the array:" << endl;
     for(int i = 0; i < 5; i++)
     {
-        cout << "> Element #" << i << ": " << endl;
+        cout << "> Element #" << i << ": ";
         cin >> array[i];
     }
-    cout << endl;
     cout << "Data entry complete." << endl;
 }
 void outputArrayData(double* array)
@@ -38,6 +37,7 @@ void outputArrayData(double* array)
     {
         cout << array[i] << " ";
     }
+    cout << endl;
 }
 double sumArray(double* array)
 {
