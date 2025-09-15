@@ -2,12 +2,13 @@
 #include <fstream>
 using namespace std;
 
+const int SIZE = 5;
 void enterArrayData(double* array);
 void outputArrayData(double* array);
 double sumArray(double* array);
 int main()
 {
-    double* arr = new double[5];
+    double* arr = new double[SIZE];
     enterArrayData(arr);
     outputArrayData(arr);
 
